@@ -1,0 +1,3 @@
+/home/abhirami/Desktop/VIPSS/vipss/CMakeFiles/vipss.dir
+/home/abhirami/Desktop/VIPSS/vipss/CMakeFiles/edit_cache.dir
+/home/abhirami/Desktop/VIPSS/vipss/CMakeFiles/rebuild_cache.dir

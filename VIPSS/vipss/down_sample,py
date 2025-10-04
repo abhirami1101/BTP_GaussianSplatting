@@ -1,0 +1,16 @@
+import numpy as np
+
+# Load your point cloud (xyz format)
+points = np.loadtxt("../data/lego/point_cloud.xyz")  # shape: (N, 3)
+
+# Set target number of points (e.g., 50k)
+target_points = 50000
+if points.shape[0] > target_points:
+    idx = np.random.choice(points.shape[0], target_points, replace=False)
+    points_ds = points[idx]
+else:
+    points_ds = points  # already small enough
+
+# Save downsampled point cloud
+np.savetxt("../data/lego/point_cloud_ds.xyz", points_ds, fmt="%.6f")
+print(f"Downsampled from {points.shape[0]} → {points_ds.shape[0]} points")
