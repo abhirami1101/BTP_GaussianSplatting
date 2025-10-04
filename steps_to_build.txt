@@ -1,0 +1,32 @@
+conda create -n gaussian_splatting python=3.10 -y
+
+conda activate gaussian_splatting
+
+conda install pytorch=1.12.1 torchvision=0.13.1 torchaudio=0.12.1 pytorch-cuda=11.6 -c pytorch -c nvidia
+
+export FORCE_CUDA=1
+
+export TORCH_CUDA_ARCH_LIST="8.6"
+
+conda install pip=22.3.1
+
+CUDA_HOME=$CONDA_PREFIX
+
+export PATH=$CONDA_PREFIX/bin:$PATH
+
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
+ 
+export CUDA_HOME=$(python -c "import torch.utils.cpp_extension as cpp; print(cpp.CUDA_HOME)")  
+
+conda install -c conda-forge gcc_linux-64=9
+
+export CC=$CONDA_PREFIX/bin/x86_64-conda-linux-gnu-gcc
+export CXX=$CONDA_PREFIX/bin/x86_64-conda-linux-gnu-g++
+
+pip install ./submodules/diff-gaussian-rasterization
+
+pip install ./submodules/simple-knn
+
+pip install ./submodules/fused-ssim
+
+pip install opencv-python joblib tqdm

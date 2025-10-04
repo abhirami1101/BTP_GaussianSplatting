@@ -1,0 +1,1000 @@
+  368  mkdir resources
+  369  cd ..
+  370  mvn test -Dtest=TaskOneTests
+  371  mvn test -Dtest=TaskTwoTests
+  372  sudo systemctl start docker
+  373  sudo systemctl enable docker
+  374  docker run hello-world
+  375  mvn clean package
+  376  mvn clean package -DskipTests
+  377  mvn test -Dtest=TaskTwoTests
+  378  mvn test -Dtest=TaskThreeTests
+  379  mvn clean package -DskipTests
+  380  mvn test -Dtest=TaskThreeTests
+  381  mvn clean package -DskipTests
+  382  [200~mvn clean install
+  383  mvn test -Dtest=TaskThreeTests
+  384  mvn clean install
+  385  mvn clean package -DskipTests
+  386  mvn test -Dtest=TaskThreeTests
+  387  mvn clean package -DskipTests
+  388  [200~mvn -Dtest=TaskThreeTests test
+  389  mvn test -Dtest=TaskThreeTests
+  390  mvn clean package -DskipTests
+  391  [200~mvn -Dtest=TaskThreeTests test
+  392  mvn test -Dtest=TaskThreeTests
+  393  mvn clean package -DskipTests
+  394  mvn clean install -DskipTests
+  395  mvn -Dmaven.surefire.debug -Dtest=TaskThreeTests test
+  396  mvn clean install -DskipTests
+  397  mvn -Dmaven.surefire.debug -Dtest=TaskThreeTests test
+  398  cd services
+  399  java -jar incentives-api.jar
+  400  java -jar transaction-incentive-api.jar
+  401  mvn test -Dtest=TaskFourTests
+  402  mvn test -Dtest=TaskThreeTests
+  403  mvn test -Dtest=TaskFiveTests
+  404  mvn clean package -DskipTests
+  405  mvn test -Dtest=TaskFiveTests
+  406  mvn clean package -DskipTests
+  407  mvn test -Dtest=TaskFiveTests
+  408  mvn clean package -DskipTests
+  409  mvn test -Dtest=TaskFiveTests
+  410  python3
+  411  pip install opencv
+  412  sudo apt install python3-pip
+  413  pip install opencv
+  414  apt install python3
+  415  apt install python3-pip
+  416  python3 -m venv opencv-env
+  417  sudo apt install python3.12-venv
+  418  python3 -m venv opencv-env
+  419  source opencv-env/bin/activate
+  420  pip install opencv-python
+  421  pip install pillow
+  422  code ./
+  423  python3 -m venv venv
+  424  source venv/bin/activate
+  425  deactivate
+  426  source venv/bin/activate
+  427  deactivate
+  428  source opencv-env/bin/activate
+  429  source ~/opencv-env/bin/activate
+  430  python3 read.py
+  431  source ~/opencv-env/bin/activate
+  432  ls
+  433  cd lab1
+  434  cd Lab1
+  435  ls
+  436  python3 code.py
+  437  open final_image.py
+  438  open final_image.jpg
+  439  code ./
+  440  source ~/opencv-env/bin/activate
+  441  python read.py
+  442  source ~/opencv-env/bin/activate
+  443  python read.py
+  444  sudo apt-get update
+  445  sudo apt-get install qemu-system-x86 qemu-utils libvirt-daemon-system libvirt-clients bridge-utils
+  446  egrep -c '(vmx|svm)' /proc/cpuinfo
+  447  sudo usermod -aG libvirt $(whoami)
+  448  sudo usermod -aG kvm $(whoami)
+  449  qemu-img create -f qcow2 my-linux-vm.qcow2 30G
+  450  wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.5.0-amd64-netinst.iso
+  451  cd Downloads/
+  452  ls
+  453  qemu-system-x86_64   -enable-kvm   -m 2G   -smp 2   -hda my-linux-vm.qcow2
+  454  cd ~
+  455  qemu-system-x86_64   -enable-kvm   -m 2G   -smp 2   -hda my-linux-vm.qcow2
+  456  ls
+  457  qemu-system-x86_64   -enable-kvm   -m 2G   -smp 2   -hda my-linux-vm.qcow2
+  458  ls
+  459  qemu-system-x86_64   -enable-kvm   -m 4G   -smp 2   -hda debian-guest.qcow2   -cdrom debian-12.5.0-amd64-netinst.iso   -boot d
+  460  qemu-system-x86_64   -enable-kvm   -m 4G   -smp 2   -hda my-linux-vm.qcow2   -cdrom debian-12.5.0-amd64-netinst.iso   -boot d
+  461  qemu-system-x86_64   -enable-kvm   -m 4G   -smp 2   -hda my-linux-vm.qcow2   -cdrom debian-12.11.0-amd64-netinst.iso   -boot d
+  462  qemu-system-x86_64   -enable-kvm   -m 4G   -smp 2   -hda debian-guest.qcow2   -cdrom debian-12.5.0-amd64-netinst.iso   -boot d
+  463  qemu-system-x86_64   -enable-kvm   -m 4G   -smp 2   -hda my-linux-vm.qcow2   -cdrom debian-12.11.0-amd64-netinst.iso   -boot d
+  464  qemu-system-x86_64   -enable-kvm   -m 4G   -smp 2   -hda my-linux-vm.qcow2   -cdrom debian-12.11.0-amd64-netinst.iso 
+  465  qemu-system-x86_64   -enable-kvm   -m 2G   -smp 2   -hda my-linux-vm.qcow2
+  466  sudo apt-get install ovmf
+  467  qemu-system-x86_64   -enable-kvm   -m 2G   -smp 2   -drive if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_CODE.fd   -drive if=pflash,format=raw,file=my_ovmf_vars.fd   -hda my-linux-vm.qcow2
+  468  sudo find / -name "OVMF_CODE.fd"
+  469  code ./
+  470  source ~/opencv-env/bin/activate
+  471  python read.py
+  472  nvcc --version
+  473  code ./
+  474  touch filters.py
+  475  source ~/opencv-env/bin/activate
+  476  pip install matplotlib
+  477  python filter.pu
+  478  python filters.py
+  479  streamlit run main.py
+  480  source ~/opencv-env/bin/activate
+  481  pip install streamlit
+  482  streamlit run main.py
+  483  pip install streamlit-cookies-manager
+  484  streamlit run main.py
+  485  pip install pyodk
+  486  streamlit run main.py
+  487  deactivate
+  488  source ~/opencv-env/bin/activate
+  489  pip install django
+  490  pip install -r requirements.txt
+  491  pip install --upgrade pyodk
+  492  pip install -r requirements.txt
+  493  pip install --upgrade pyodk
+  494  deactivate
+  495  source ~/opencv-env/bin/activate
+  496  streamlit run main.py
+  497  deactivate
+  498  source ~/Documents/venv/bin/activate
+  499  pip install -r requirements.txt
+  500  streamlit run main.py
+  501  pip install captcha
+  502  streamlit run main.py
+  503  cd ../..
+  504  ls
+  505  cd Dashboard/
+  506  ls
+  507  streamlit run main.py
+  508  cd src
+  509  streamlit run main.py
+  510  cd ..
+  511  git pull
+  512  cd Dashboard/
+  513  cd src/
+  514  streamlit run main.py
+  515  pip install redis
+  516  streamlit run main.py
+  517  python -c "import secrets; print(secrets.token_hex(32))"
+  518  export JWT_SECRET_KEY="export JWT_SECRET_KEY="558045220642a96c5dabc017b5efda93a2422b9e9ceba0f7a50448ff80cc2522"
+  519  streamlit run main.py
+  520  export JWT_SECRET_KEY="558045220642a96c5dabc017b5efda93a2422b9e9ceba0f7a50448ff80cc2522"
+  521  python -c "import secrets; print(secrets.token_hex(32))"
+  522  streamlit run main.py
+  523  cd ..
+  524  mkdir new
+  525  cd new
+  526  git clone git@abhirami1101:NandhanaSunil/ANC_Monitoring.git
+  527  cd ANC_Monitoring/
+  528  cd Dashboard/
+  529  cd src/
+  530  code  ./
+  531  streamlit run main.py
+  532  source /home/abhirami/Documents/venv/bin/activate
+  533  streamlit run main.py
+  534  source ~/opencv-env/bin/activate
+  535  python filters.py
+  536  code ./
+  537  python3 -m venv venv
+  538  cd ~
+  539  nano ~/.pyodk_config.toml
+  540  code ./
+  541  cd Documents/
+  542  git clone git@github.com:NandhanaSunil/ANC_Monitoring.git
+  543  cd Project
+  544  mkdir Project
+  545  cd Project
+  546  git clone git@github.com:NandhanaSunil/ANC_Monitoring.git
+  547  ssh -T git@github.com
+  548  nano ~/.ssh
+  549  ssh -T abhirami009@github.com
+  550  nano ~/.ssh/config
+  551  git clone git@github-abhirami1101:NandhanaSunil/ANC_Monitoring.git
+  552  git clone git@abhirami1101:NandhanaSunil/ANC_Monitoring.git
+  553  ls
+  554  cd ANC_Monitoring/
+  555  cd src
+  556  ls
+  557  cd Dashboard/
+  558  ls
+  559  cd src
+  560  ls
+  561  code ./
+  562  touch paved.cpp
+  563  g++ paved.cpp
+  564  ./a.out
+  565  g++ paved.cpp
+  566  ./a.out
+  567  g++ paved.cpp
+  568  ./a.out
+  569  g++ paved.cpp
+  570  ./a.out
+  571  g++ paved.cpp
+  572  ./a.out
+  573  g++ paved.cpp
+  574  ./a.out
+  575  g++ paved.cpp
+  576  ./a.out
+  577  g++ paved.cpp
+  578  ./a.out
+  579  g++ paved.cpp
+  580  ./a.out
+  581  g++ paved.cpp
+  582  ./a.out
+  583  g++ paved.cpp
+  584  ./a.out
+  585  g++ paved.cpp
+  586  ./a.out
+  587  g++ paved.cpp
+  588  ./a.out
+  589  g++ paved.cpp
+  590  ./a.out
+  591  g++ paved.cpp
+  592  ./a.out
+  593  g++ paved.cpp
+  594  ./a.out
+  595  g++ paved.cpp
+  596  ./a.out
+  597  g++ paved.cpp
+  598  ./a.out
+  599  g++ paved.cpp
+  600  ./a.out
+  601  g++ paved.cpp
+  602  ./a.out
+  603  g++ paved.cpp
+  604  ./a.out
+  605  g++ paved.cpp
+  606  ./a.out
+  607  touch path.cpp
+  608  g++ path.cpp
+  609  ./a.out
+  610  1 1
+  611  0
+  612  3 3
+  613  0 1 1
+  614  1 0 1
+  615  1 1 1
+  616  5 5
+  617  1 1 1 1 1
+  618  1 0 0 0 1
+  619  1 0 5 0 1
+  620  1 0 0 0 1
+  621  1 1 1 1 1
+  622  5 5
+  623  1 1 1 1 1
+  624  1 0 0 0 1
+  625  1 1 4 0 1
+  626  1 0 0 0 1
+  627  1 1 1 1 1
+  628  g++ path.cpp
+  629  1 1 1 1 1
+  630  ./a.out
+  631  };
+  632  ./a.out
+  633  1 1
+  634  0
+  635  3 3
+  636  0 1 1
+  637  1 0 1
+  638  1 1 1
+  639  5 5
+  640  1 1 1 1 1
+  641  1 0 0 0 1
+  642  1 0 5 0 1
+  643  1 0 0 0 1
+  644  1 1 1 1 1
+  645  5 5
+  646  1 1 1 1 1
+  647  1 0 0 0 1
+  648  1 1 4 0 1
+  649  1 0 0 0 1
+  650  1 1 1 1 1
+  651  g++ path.cpp
+  652  ./a.out
+  653  1 1
+  654  0
+  655  3 3
+  656  0 1 1
+  657  1 0 1
+  658  1 1 1
+  659  5 5
+  660  1 1 1 1 1
+  661  1 0 0 0 1
+  662  1 0 5 0 1
+  663  1 0 0 0 1
+  664  1 1 1 1 1
+  665  5 5
+  666  1 1 1 1 1
+  667  1 0 0 0 1
+  668  1 1 4 0 1
+  669  1 0 0 0 1
+  670  1 1 1 1 1
+  671  g++ path.cpp
+  672  ./a.out
+  673  g++ path.cpp
+  674  ./a.out
+  675  sudo reboot
+  676  sudo service network-manager restart
+  677  sudo service networking restart
+  678  ssh exam1@10.128.0.121
+  679  nvcc -ptx cuda_one.cu
+  680  ssh exam1@10.128.0.121
+  681  streamlit run main.py
+  682  source ~/Documents/venv/bin/activate
+  683  streamlit run main.py
+  684  streamlit run main
+  685  cd Dashboard/
+  686  cd src/
+  687  streamlit run main.py
+  688  code ./
+  689  lshw -C network
+  690  lspci
+  691  sudo lshw -C network
+  692  iwconfig
+  693  lsmod | grep wifi
+  694  sudo apt update && sudo apt upgrade -y
+  695  lshw -C network
+  696  sudo lshw -C network
+  697  lspci --nnk | grep -iA3 net
+  698  lspci -nnk | grep -iA3 net
+  699  lspci -nnk | grep -i net
+  700  sudo apt update && sudo apt upgrade -y
+  701  sudo apt install linux-firmware firmware-misc-nonfree
+  702  sudo apt install linux-firmware
+  703  iwconfig
+  704  lspci -nnk | grep -i net
+  705  sudo reboot
+  706  code ./
+  707  iwconfig
+  708  sudo apt install linux-firmware
+  709  lspci | grep -i network
+  710  uname -r
+  711  sudo apt install --reinstall linux-firmware
+  712  sudo modprobe mt7921e
+  713  nmcli device
+  714  iwconfig
+  715  nmcli device
+  716  dmesg | grep -i mt792
+  717  sudo dmesg | grep -i mt792
+  718  sudo modprobe mt7921e
+  719  sudo dmesg | grep -i mt792
+  720  sudo modprobe mt7921e
+  721  nmcli device
+  722  uname -r
+  723  dmesg | grep -i firmware
+  724  sudo dmesg | grep -i firmware
+  725  touch ans.py
+  726  source ~/opencv-env/bin/activate
+  727  python ans.py
+  728  code ./
+  729  touch inher.cpp
+  730  g++ inher.cpp
+  731  ./a.out
+  732  ip link
+  733  sudo apt install wireshark
+  734  wireshark
+  735  traceroute www.facebook.com
+  736  sudo apt install traceroute
+  737  traceroute www.facebook.com
+  738  traceroute www.google.com
+  739  traceroute www.google.co.in
+  740  traceroute www.google.co.kr
+  741  ping -c 4 iitpkd.ac.in
+  742  ip link
+  743  sudo tcpdump -i wlp3s0 -n icmp -w traceroute_iitpkd.pcap
+  744  chmod 777  traceroute_iitpkd.pcap
+  745  sudo chmod 777 traceroute_iitpkd
+  746  sudo chmod 777 traceroute_iitpkd.pcap
+  747  ip link
+  748  sudo tcpdump -i wlp3s0  -n icmp -w traceroute_iitpkd.pcap
+  749  sudo tcpdump -I wlp3s0  -n icmp -w traceroute_iitpkd.pcap
+  750  sudo tcpdump -i wlp3s0  -n icmp -w traceroute_iitpkd.pcap
+  751  traceroute www.facebook.com
+  752  sudo tcpdump -i wlp3s0 -n icmp -w traceroute_iitpkd.pcap
+  753  traceroute www.facebook.com
+  754  sudo tcpdump -i wlp3s0 -n icmp -w traceroute.pcap
+  755  traceroute iitpkd.ac.in
+  756  sudo traceroute -I iitpkd.ac.in
+  757  sudo -I traceroute www.facebook.com
+  758  sudo traceroute -I www.facebook.com
+  759  traceroute lg.tools.telstra.net
+  760  sudo traceroute -I lg.tools.telstra.net
+  761  sudo traceroute www.google.com
+  762  sudo traceroute tidlg-win-gw.tools.telstra.net
+  763  sudo traceroute -I  tidlg-win-gw.tools.telstra.net
+  764  sudo traceroute www.google.com
+  765  sudo chmod 777 traceroute.pcap
+  766  code ./
+  767  [200~git add .
+  768  git branch
+  769  git checkout -b fix/logout-bug
+  770  git add .
+  771  git commit -m "Fix login issues and clean up code"
+  772  git push -u origin fix/login-cleanup
+  773  git push -u origin fix/logout-bug
+  774  git add .
+  775  git commit -m "Moved hardcoded keys to secrets.toml"
+  776  git add .
+  777  git commit -m "Moved hardcoded keys to secrets.toml"
+  778  git push -u origin fix/logout-bug
+  779  streamlit run main.py
+  780  source ~/venv/bin/activate
+  781  source ~/Documents/venv/bin/activate
+  782  streamlit run main.py
+  783  ssh exam1@10.128.0.121
+  784  touch assignment1.py
+  785  code ./
+  786  source ~/opencv-env/bin/activate
+  787  python assignment1.py 
+  788  sudo apt-get update
+  789  sudo apt-get install libxcb-cursor0
+  790  python assignment1.py 
+  791  ssh -p 49122 b112201001-avirupmandal@madhava.iitpkd.ac.in
+  792  scp -r ~/Downloads/nerf_synthetic b112201001-avirupmandal@login01:/home/b112201001-avirupmandal/IMLS-Splatting/gaussian-splatting/data/
+  793  scp -P 49122 ~/Downloads/nerf_synthetic.zip b112201001-avirupmandal@madhava.iitpkd.ac.in:/home/b112201001-avirupmandal/IMLS-Splatting/gaussian-splatting/data
+  794  ls
+  795  ssh -p 49122 b112201001-avirupmandal@madhava.iitpkd.ac.in
+  796  ssh -p 49122 b112201001-avirupmandal@madhava.iitpkd.ac.in
+  797  ssh exam1@10.128.0.121
+  798  python3 EventClient.py 
+  799  python3 ThreadServer.py 
+  800  python3 EventClient.py 
+  801  ./A/server.sh 1234
+  802  ./A/server/server.sh 1234
+  803  ./A/Server/server.sh 1234
+  804  cd A
+  805  cd Server/
+  806  ./server.sh 1234
+  807  cd ..
+  808  cd Client/
+  809  ./client.sh localhost 1234
+  810  ./client.sh localhost 1234
+  811  cd ../Server/
+  812  ./server.sh 1234
+  813  cd B/Client/
+  814  ./client.sh localhost 1234
+  815  cd ..
+  816  cd Server/
+  817  ./server.sh 1234
+  818  cd ..
+  819  cd Client/
+  820  ./client.sh localhost 1234
+  821  code ./
+  822  cd b
+  823  python3 sever.py
+  824  python3 server.py
+  825  python3 server.py 1234
+  826  python3 server.py 1235
+  827  cd b
+  828  python3 client.py 1235
+  829  python3 client.py localhost 1235
+  830  python3 EventClient.py 1234
+  831  python3 EventClient.py 1234 < /home/abhirami/Downloads/Dostoyevsky.txt
+  832  python3 ThreadServer.py 
+  833  python3 EventClient.py 1234
+  834  python3 EventClient.py 1234 < /home/abhirami/Downloads/Dostoyevsky.txt
+  835  python3 EventClient.py 1234 < /home/abhirami/Downloads/Dostoyevsky.txt python3 EventClient.py 1234 < /home/abhirami/Downloads/Dostoyevsky.txt
+  836  sh dual.sh
+  837  python3 EventClient.py 1234 < /home/abhirami/Downloads/Dostoyevsky.txt
+  838  python3 cient.py 1234 < /home/abhirami/Downloads/Dostoyevsky.txt
+  839  python3 client.py 1234 < /home/abhirami/Downloads/Dostoyevsky.txt
+  840  sh dual.sh
+  841  python3 client.py 1234
+  842  sh dual.sh
+  843  python3 client.py localhost 1234 -l
+  844  python3 client.py localhost 1234
+  845  python3 client.py localhost 1234 < /home/abhirami/Documents/CN/Assignment/Dostoyevsky.txt 
+  846  python3 client.py localhost 1234 -l < /home/abhirami/Documents/CN/Assignment/Dostoyevsky.txt 
+  847  python3 client.py localhost 1234 < /home/abhirami/Documents/CN/Assignment/Dostoyevsky.txt 
+  848  python3 client.py localhost 1234
+  849  python3 client.py localhost 1234 -l
+  850  python3 client.py localhost 1234
+  851  ./client.sh localhost 1234
+  852  ./client.sh localhost 1234 -l
+  853  ./client.sh localhost 1234 -latency
+  854  ./client.sh localhost 1234 -latency < Dostoyevysky
+  855  ./client.sh localhost 1234 -latency < Dostoyevysky.txt
+  856  ./client.sh localhost 1234 -latency < Dostoyevsky.txt
+  857  clear
+  858  ./client.sh localhost 1234 -latency < Dostoyevsky.txt
+  859  python3 ThreadServer.py 1234
+  860  python3 ThreadServer.py 1234 > output.txt
+  861  python3 thread.py 1234 > output.txt
+  862  python3 server.py 1234 > output.txt
+  863  python3 server.py 1234 
+  864  python3 server.py 1234 -l
+  865  ./server.sh 1234 
+  866  ./server.sh 1234 -l
+  867  ./server.sh 1234 -latency
+  868  exit
+  869  cd Client/
+  870  ./client.sh 10.128.15.255 1234 
+  871  ./client.sh localhost  1234 
+  872  ./client.sh 10.128.15.255  1234 
+  873  ./client.sh 10.128.3.47  1234 
+  874  ./client.sh 10.128.3.47  8000
+  875  cd ../Server/
+  876  ./server.sh 8000
+  877  clear
+  878  ip addr show
+  879  clear
+  880  cd Documents
+  881  ls
+  882  code ./
+  883  ls
+  884  cd Downloads/
+  885  cd CN
+  886  cd ..
+  887  cd Documents/
+  888  cd CN
+  889  cd R_Iyer_Sunil_Lab3/
+  890  code ./
+  891  xlist
+  892  git init
+  893  cd ComputerNetworks/B/Client/
+  894  ./client.sh localhost 8000
+  895  cd ComputerNetworks/B/Server/
+  896  ./server.sh 8000
+  897  code ./
+  898  cd A
+  899  cd Client/
+  900  ./client.sh localhost 8000
+  901  cd A/
+  902  cd Client/
+  903  ./client.sh localhost 8000
+  904  clear
+  905  cd B/
+  906  cd Client/
+  907  ./client.sh localhost 8000
+  908  clear
+  909  cd B/
+  910  cd Server/
+  911  ./server.sh 8000
+  912  nvidia smi
+  913  nvidia-smi
+  914  cd Documents/
+  915  cd GPU_programming/
+  916  mkdir trials
+  917  cd trials
+  918  touch cuda_trial.cu
+  919  code ./
+  920  nvcc cuda_trial.cu 
+  921  sudo apt install nvidia-cuda-toolkit
+  922  nvcc cuda_trial.cu 
+  923  ./a.out
+  924  nvidia-smi -i 0 --query-gpu=memory.total --format=csv,noheader,nounits
+  925  nvidia-smi
+  926  sudo nano /etc/sysctl.d/99-sysrq.conf
+  927  sudo sysctl -p /etc/sysctl.d/99-sysrq.conf
+  928  ubuntu-drivers devices
+  929  sudo apt update
+  930  sudo ubuntu-drivers install
+  931  ubuntu-drivers devices
+  932  sudo apt upgrade -y
+  933  journalctl -b -1 | less
+  934  journalctl -p 3  -b  -1 | less
+  935  journalctl -p 3  -b  -1 
+  936  journalctl -p 3 -b  -1 
+  937  nvidia-smi
+  938  mokutil --sb-state
+  939  journalctl -p 3 -b  -1 
+  940  hostname
+  941  hostnamectl
+  942  sudo systemctl restart avahi-daemon
+  943  sudo hostnamectl set-hostname Abhirami-Zephyrus
+  944  sudo systemctl restart avahi-daemon
+  945  hostname
+  946  sudo modprobe -r i2c_hid
+  947  sudo modprobe i2c_hid
+  948  sudo update-grub
+  949  uname -r
+  950  sudo nano /etc/modprobe.d/nvidia.conf
+  951  clear
+  952  journalctl -p 3 -b  -1 
+  953  clear
+  954  history | grep "ssh"
+  955  clear
+  956  ssh -p 49122 b112201001-avirupmandal@madhava.iitpkd.ac.in
+  957  df -h
+  958  nvidia smi
+  959  nvidia-smi
+  960  lshw -C network
+  961  nmcli device status
+  962  sudo systemctl restart NetworkManager
+  963  ip a
+  964  sudo ubuntu-drivers devices
+  965  cd Desktop/
+  966  git clone https://github.com/SilenKZYoung/IMLS-Splatting.git
+  967  cd IMLS-Splatting/
+  968  gcc --version
+  969  nvcc --version
+  970  python --version
+  971  python3 --version
+  972  conda env create -f environment.yml
+  973  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+  974  bash Miniconda3-latest-Linux-x86_64.sh
+  975  source ~/.bashrc
+  976  conda --version
+  977  conda env create -f environment.yml
+  978  pip install --default-timeout=300 --no-cache-dir -r /home/abhirami/Desktop/IMLS-Splatting/condaenv.hra885so.requirements.txt
+  979  pip install --default-timeout=300 --no-cache-dir opencv-python
+  980  conda activate imls_splatting
+  981  pip install --default-timeout=600 --no-cache-dir opencv-python open3d scikit-image imageio
+  982  cd gaussian-splatting
+  983  python train.py --eval --white_background --resolution 2 --expname lego -s ./data/nerf_synthetic/lego
+  984  pip install ./submodules/diff-gaussian-rasterization
+  985  cd ..
+  986  pip install ./submodules/diff-gaussian-rasterization
+  987  conda install -c conda-forge cudatoolkit-dev=11.3
+  988  pip install ./submodules/diff-gaussian-rasterization
+  989  nvcc --version
+  990  conda install -c conda-forge gcc=10 gxx=10
+  991  gcc --version
+  992  pip install ./submodules/diff-gaussian-rasterization
+  993  g++ --version
+  994  conda install -c conda-forge gcc=9 gxx=9
+  995  conda install -c conda-forge gcc=9.5 gxx=9.5
+  996  g++ --version
+  997  pip install ./submodules/diff-gaussian-rasterization
+  998  sudo apt-get install libxcrypt-dev
+  999  pip install ninja
+ 1000  sudo apt-get install libcrypt-dev
+ 1001  pip install ./submodules/diff-gaussian-rasterization
+ 1002  pip uninstall -y diff_gaussian_rasterization
+ 1003  cd submodules/diff-gaussian-rasterization/
+ 1004  pip uninstall -y diff_gaussian_rasterization
+ 1005  rm -rf build
+ 1006  cd ..
+ 1007  conda deactivate
+ 1008  conda env list
+ 1009  nano env.yml
+ 1010  conda env create -f env.yml
+ 1011  conda env list
+ 1012  conda activate imls_splattig
+ 1013  conda activate imls_splatting
+ 1014  pip uninstall -y diff_gaussian_rasterization
+ 1015  pip install ./submodules/diff-gaussian-rasterization
+ 1016  sudo apt-get install -y libxcrypt-dev
+ 1017  sudo apt-get install -y build-essential
+ 1018  ls /usr/include/crypt.h
+ 1019  lsb_release -a
+ 1020  pip install ./submodules/diff-gaussian-rasterization
+ 1021  rm -rf ./submodules/diff-gaussian-rasterization/build
+ 1022  pip install ./submodules/diff-gaussian-rasterization
+ 1023  sudo apt-get install -y libxcrypt-compat
+ 1024  ls /usr/include/crypt.h
+ 1025  ls/usr/include/ | grep crypt.h
+ 1026  ls /usr/include/ | grep crypt.h
+ 1027  conda install -c conda-forge libxcrypt
+ 1028  rm -rf ./submodules/diff-gaussian-rasterization/build
+ 1029  pip install ./submodules/diff-gaussian-rasterization
+ 1030  export CPLUS_INCLUDE_PATH=
+ 1031  export CPATH=
+ 1032  pip install ./submodules/diff-gaussian-rasterization
+ 1033  export CC=$(which gcc)
+ 1034  export CXX=$(which g++)
+ 1035  echo $CC
+ 1036  echo $CXX
+ 1037  rm -rf ./submodules/diff-gaussian-rasterization/build
+ 1038  pip install ./submodules/diff-gaussian-rasterization
+ 1039  export CPLUS_INCLUDE_PATH=
+ 1040  export CPATH=
+ 1041  export C_INCLUDE_PATH=
+ 1042  export CPLUS_INCLUDE_PATH=
+ 1043  export CC=$(which gcc)
+ 1044  export CXX=$(which g++)
+ 1045  export CUDACXX=$(which nvcc)
+ 1046  rm -rf ./submodules/diff-gaussian-rasterization/build
+ 1047  pip install ./submodules/diff-gaussian-rasterization
+ 1048  export C_INCLUDE_PATH=/usr/include
+ 1049  export CPLUS_INCLUDE_PATH=/usr/include
+ 1050  export CPATH=/usr/include
+ 1051  export CUDACXX=/usr/local/cuda/bin/nvcc  # adjust if CUDA path is different
+ 1052  export CC=$(which gcc)
+ 1053  export CXX=$(which g++)
+ 1054  rm -rf ./submodules/diff-gaussian-rasterization/build
+ 1055  pip install ./submodules/diff-gaussian-rasterization
+ 1056  conda deactivate
+ 1057  clear
+ 1058  conda create -n imls_new python=3.9 -y
+ 1059  conda activate imls_new
+ 1060  conda install pip=22.3.1 tqdm plyfile joblib imageio scikit-image -y
+ 1061  conda install -c conda-forge plyfile
+ 1062  conda install -c conda-forge pip=22.3.1 tqdm plyfile joblib imageio scikit-image -y
+ 1063  conda install -c conda-forge pytorch=1.12.1 torchvision=0.13.1 torchaudio=0.12.1 pytorch-cuda=11.3 -c pytorch -c nvidia -y
+ 1064  conda install -c conda-forge pytorch=1.12.1 torchvision=0.13.1 torchaudio=0.12.1 cudatoolkit=11.3 -c pytorch -c nvidia
+ 1065  python -c "import torch; print(torch.version.cuda); print(torch.cuda.is_available())"
+ 1066  conda deactivate
+ 1067  conda env remove -n imls_new
+ 1068  conda create -n imls_splatting python=3.10 -y
+ 1069  conda activate imls_splatting
+ 1070  conda install -c conda-forge tqdm plyfile joblib imageio scikit-image -y
+ 1071  conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y
+ 1072  python -c "import torch; print(torch.version.cuda); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0))"
+ 1073  pip install opencv-python open3d
+ 1074  pip install ./submodules/diffsplatting
+ 1075  which g++
+ 1076  g++ --version
+ 1077  export CC=/usr/bin/gcc
+ 1078  export CXX=/usr/bin/g++
+ 1079  pip install --no-build-isolation ./submodules/diffsplatting
+ 1080  conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y
+ 1081  export CUDA_HOME=$CONDA_PREFIX
+ 1082  pip install --no-build-isolation ./submodules/diffsplatting
+ 1083  export CUDA_HOME=$CONDA_PREFIX
+ 1084  echo $CUDA_HOME
+ 1085  pip install --no-build-isolation ./submodules/diffsplatting
+ 1086  export CUDA_HOME=$CONDA_PREFIX
+ 1087  export PATH=$CUDA_HOME/bin:$PATH
+ 1088  export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+ 1089  pip install --no-build-isolation ./submodules/diffsplatting
+ 1090  nvcc --version
+ 1091  mkdir -p $CONDA_PREFIX/etc/conda/activate.d
+ 1092  nano $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+ 1093  conda deactivate
+ 1094  conda activate imls_splatting
+ 1095  echo $CUDA_HOME
+ 1096  echo $CC
+ 1097  echo $CXX
+ 1098  pip install --no-build-isolation ./submodules/diffsplatting
+ 1099  export CUDA_HOME = $(which nvcc)
+ 1100  export CUDA_HOME=$(which nvcc)
+ 1101  pip install --no-build-isolation ./submodules/diffsplatting
+ 1102  export CUDA_HOME=$CONDA_PREFIX
+ 1103  pip install --no-build-isolation ./submodules/diffsplatting
+ 1104  conda deactivate
+ 1105  conda env remove -n imls_splatting
+ 1106  conda env list
+ 1107  nvcc --version
+ 1108  gcc --version
+ 1109  nano new.yml
+ 1110  conda env create --file new.yml
+ 1111  which cuda
+ 1112  which nvcc
+ 1113  ls /usr/bin/
+ 1114  ls /usr/bin/ | grep cuda
+ 1115  ls /usr/local/ | grep cuda
+ 1116  ls /usr/local/ 
+ 1117  ls /usr/local/src/ 
+ 1118  ls /usr/local/include// 
+ 1119  cuda --version
+ 1120  ls /usr/local/cuda 
+ 1121  echo $CUDA_HOME
+ 1122  history
+ 1123  df -h
+ 1124  echo $CUDA_HOME
+ 1125  ls ./submodules/
+ 1126  nvcc --version
+ 1127  conda activate imls_splatting
+ 1128  echo $CUDA_HOME
+ 1129  pip install ./submodules/diff-gaussian-rasterization/
+ 1130  nvcc --version
+ 1131  /usr/local/cuda-12.0
+ 1132  cd ~/usr/local/cuda-12.0
+ 1133  cd /usr/local/cuda-12.0
+ 1134  export CUDA_HOME=/usr
+ 1135  export PATH=$CUDA_HOME/bin:$PATH
+ 1136  export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+ 1137  export CC=/usr/bin/gcc
+ 1138  export CXX=/usr/bin/g++
+ 1139  pip install ./submodules/diff-gaussian-rasterization/
+ 1140  clear
+ 1141  pip install ./submodules/diff-gaussian-rasterization/
+ 1142  conda deactivate
+ 1143  conda activate imls_splatting
+ 1144  which python
+ 1145  which pip
+ 1146  conda deactivate
+ 1147  conda deactivate
+ 1148  nvcc --versioin
+ 1149  nvcc --version
+ 1150  which nvcc
+ 1151  df -a
+ 1152  df -h
+ 1153  cd Desktop/
+ 1154  cd IMLS-Splatting/
+ 1155  conda create -n imls_splatting python=3.9 cudatoolkit=11.8 -c pytorch -c nvidia/label/cuda-11.8 -c conda-forge -c defaults
+ 1156  conda activate imls_splatting
+ 1157  conda install -c conda-forge gxx_linux-64=11 gcc_linux-64=11
+ 1158  conda install pytorch=2.0.1 torchvision=0.15.2 torchaudio=2.0.2 -c pytorch -c conda-forge
+ 1159  conda install plyfile tqdm pip=22.3.1 opencv-python joblib open3d imageio scikit-image -c conda-forge
+ 1160  conda install plyfile tqdm pip=22.3.1  joblib open3d imageio scikit-image -c conda-forge
+ 1161  pip install opencv-python
+ 1162  pip install configargparse nbformat>=5.7.0
+ 1163  python -c "import open3d; import cv2; import numpy; print(open3d.__version__, cv2.__version__, numpy.__version__)"
+ 1164  conda install -c conda-forge opencv
+ 1165  conda env remove -n imls_splatting
+ 1166  df -h
+ 1167  conda clean -a -y
+ 1168  df -h
+ 1169  gcc --version
+ 1170  nvcc --version
+ 1171  python --version
+ 1172  conda deactivate
+ 1173  which nvcc
+ 1174  export CUDA_HOME=/usr/
+ 1175  export PATH=$CUDA_HOME/bin:$PATH
+ 1176  echo $CUDA_HOME
+ 1177  echo $PATH
+ 1178  pip install ./submodules/diff-gaussian-rasterization
+ 1179  cd Documents/
+ 1180  ls
+ 1181  mkdir btp
+ 1182  ls ../Desktop/
+ 1183  cd ../Desktop/
+ 1184  git clone git@github.com:graphdeco-inria/gaussian-splatting.git --recursive
+ 1185  nvidia-smi
+ 1186  conda create -n gaussian_splatting python=3.10 -y
+ 1187  conda activate gaussian_splatting
+ 1188  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+ 1189  python -c "import torch; print(torch.cuda.is_available())"
+ 1190  cd gaussian-splatting/
+ 1191  pip install -r requirements.txt
+ 1192  ls
+ 1193  cat environment.yml 
+ 1194  conda deactivate
+ 1195  conda remove -n gaussian_splatting --all -y
+ 1196  conda create -n gaussian_splatting python=3.10 -y
+ 1197  conda activate gaussian_splatting
+ 1198  python --version
+ 1199  # should be 3.10.x
+ 1200  conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
+ 1201  python -c "import torch; print(torch.cuda.is_available(), torch.version.cuda)"
+ 1202  conda install tqdm plyfile opencv joblib ninja -c conda-forge -y
+ 1203  git submodule update --init --recursive
+ 1204  pip install ./submodules/diff-gaussian-rasterization
+ 1205  export CUDA_HOME=$(python -c "import torch; print(torch.utils.cpp_extension.CUDA_HOME)")
+ 1206  export PATH=$CUDA_HOME/bin:$PATH
+ 1207  export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+ 1208  conda info --envs
+ 1209  # should have a * next to gaussian_splatting
+ 1210  which python
+ 1211  # should point to miniconda3/envs/gaussian_splatting/bin/python
+ 1212  python -c "import torch.utils.cpp_extension as cpp; print(cpp.CUDA_HOME)"
+ 1213  export CUDA_HOME=$(python -c "import torch.utils.cpp_extension as cpp; print(cpp.CUDA_HOME)")
+ 1214  export PATH=$CUDA_HOME/bin:$PATH
+ 1215  export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+ 1216  export TORCH_CUDA_ARCH_LIST="8.9"
+ 1217  export FORCE_CUDA=1
+ 1218  pip install ./submodules/diff-gaussian-rasterization
+ 1219  conda activte gaussian_splatting
+ 1220  conda activate gaussian_splatting
+ 1221  pip show torch
+ 1222  conda list torch
+ 1223  conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
+ 1224  python -c "import torch.utils.cpp_extension as cpp; print(cpp.CUDA_HOME)"
+ 1225  conda remove pytorch torchvision torchaudio -y
+ 1226  conda install pytorch=1.12.1 torchvision=0.13.1 torchaudio=0.12.1 pytorch-cuda=11.6 -c pytorch -c nvidia -y
+ 1227  python -c "import torch; print(torch.__version__, torch.version.cuda)"
+ 1228  conda install pytorch=1.12.1 torchvision=0.13.1 torchaudio=0.12.1 pytorch-cuda=11.6 -c pytorch -c nvidia
+ 1229  conda install -c conda-forge cmake ninja
+ 1230  python -c "import torch; print(torch.__version__, torch.version.cuda)"
+ 1231  conda install pytorch-cuda=11.6
+ 1232  conda update -n base -c defaults conda
+ 1233  conda install pytorch-cuda=11.6
+ 1234  which nvcc
+ 1235  python -c "import torch; print(torch.__version__, torch.version.cuda)"
+ 1236  conda list | grep torch
+ 1237  python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+ 1238  conda activate gaussian_splatting
+ 1239  python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+ 1240  conda remove pytorch torchvision torchaudio pytorch-cuda
+ 1241  conda install pytorch=1.12.1 torchvision=0.13.1 torchaudio=0.12.1 pytorch-cuda=11.6 -c pytorch -c nvidia
+ 1242  python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+ 1243  export CUDA_HOME=$(python -c "import torch.utils.cpp_extension as cpp; print(cpp.CUDA_HOME)")
+ 1244  export PATH=$CUDA_HOME/bin:$PATH
+ 1245  export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+ 1246  export TORCH_CUDA_ARCH_LIST="8.9"
+ 1247  export FORCE_CUDA=1
+ 1248  pip install ./submodules/diff-gaussian-rasterization
+ 1249  export CUDA_HOME=$(python -c "import torch.utils.cpp_extension as cpp; print(cpp.CUDA_HOME)")                                                                              
+ 1250  export PATH=$CUDA_HOME/bin:$PATH                                                   
+ 1251  export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH                           
+ 1252  export TORCH_CUDA_ARCH_LIST="8.9"                                                  
+ 1253  export FORCE_CUDA=1
+ 1254  python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+ 1255  pip install ./submodules/diff-gaussian-rasterization/
+ 1256  pip -version
+ 1257  conda activate gaussian_splatting
+ 1258  pip install ./submodules/diff-gaussian-rasterization/
+ 1259  python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+ 1260  pip install ./submodules/diff-gaussian-rasterization
+ 1261  python --version
+ 1262  pip install ./submodules/diff-gaussian-rasterization
+ 1263  which python
+ 1264  conda install pip=22.3.1
+ 1265  pip install ./submodules/diff-gaussian-rasterization
+ 1266  python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+ 1267  pip install ./submodules/diff-gaussian-rasterization
+ 1268  which python
+ 1269  conda deactivate
+ 1270  conda activate gaussian_splatting
+ 1271  which python
+ 1272  pip install ./submodules/diff-gaussian-rasterization
+ 1273  which pip
+ 1274  conda install pip
+ 1275  which pip
+ 1276  echo $PATH
+ 1277  which python
+ 1278  which pip
+ 1279  conda install --force-reinstall pip
+ 1280  which pip
+ 1281  export PATH=/home/abhirami/miniconda3/envs/gaussian_splatting/bin:$PATH
+ 1282  which pip
+ 1283  pip install ./submodules/diff-gaussian-rasterization
+ 1284  which pippython -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+ 1285  python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+ 1286  pip install ./submodules/diff-gaussian-rasterization
+ 1287  export CUDA_HOME=$CONDA_PREFIX
+ 1288  export PATH=$CONDA_PREFIX/bin:$PATH
+ 1289  export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
+ 1290  pip install ./submodules/diff-gaussian-rasterization
+ 1291  conda activate gaussian_splatting
+ 1292  # Tell PyTorch extension to build for RTX 4060
+ 1293  export TORCH_CUDA_ARCH_LIST="8.9"
+ 1294  # Optional: clean previous build attempts
+ 1295  cd submodules/diff-gaussian-rasterization
+ 1296  rm -rf build
+ 1297  # Reinstall
+ 1298  pip install --no-cache-dir .
+ 1299  export TORCH_CUDA_ARCH_LIST="8.6"
+ 1300  cd ..
+ 1301  pip install ./submodules/diff-gaussian-rasterization
+ 1302  conda install -c conda-forge gxx_linux-64=9
+ 1303  conda install -c conda-forge gcc_linux-64=9
+ 1304  which gcc
+ 1305  gcc --version
+ 1306  export CC="/home/abhirami/miniconda3/envs/gaussian_splatting/bin/gcc"
+ 1307  export CXX="/home/abhirami/miniconda3/envs/gaussian_splatting/bin/g++"
+ 1308  gcc --version
+ 1309  which gcc
+ 1310  conda actiavate gcc
+ 1311  conda actiavate gaussian_splatting
+ 1312  conda activate gcc
+ 1313  conda activate gaussian_splatting
+ 1314  which gcc
+ 1315  export PATH=$CONDA_PREFIX/bin:$PATH
+ 1316  which gcc
+ 1317  export CXX="/home/abhirami/miniconda3/envs/gaussian_splatting/bin/"
+ 1318  which gcc
+ 1319  export CC="/home/abhirami/miniconda3/envs/gaussian_splatting/bin/"
+ 1320  which gcc
+ 1321  echo $PATH
+ 1322  conda deactivate
+ 1323  conda init
+ 1324  history
+ 1325  history > steps.txt
+ 1326  conda activate gaussian_splatting
+ 1327  which gcc
+ 1328  conda install -c conda-forge gxx_linux-64=9
+ 1329  which gcc
+ 1330  conda remove --force gxx_linux-64 -y
+ 1331  conda install -c conda-forge gxx_linux-64=9 -y
+ 1332  export PATH="/home/abhirami/miniconda3/envs/gaussian_splatting/bin:$PATH"
+ 1333  which gcc
+ 1334  gcc --version
+ 1335  nano ~/.bashrc
+ 1336  conda init bash
+ 1337  conda activate gaussian_splatting
+ 1338  conda install -c conda-forge gxx_linux-64=9 -y
+ 1339  which gcc
+ 1340  which pip
+ 1341  python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+ 1342  export PATH=$CONDA_PREFIX/bin:$PATH
+ 1343  which pip
+ 1344  which gcc
+ 1345  export CC=$CONDA_PREFIX/bin/gcc
+ 1346  export CXX=$CONDA_PREFIX/bin/g++
+ 1347  which gcc
+ 1348  export CC=$CONDA_PREFIX/bin/x86_64-conda-linux-gnu-gcc
+ 1349  export CXX=$CONDA_PREFIX/bin/x86_64-conda-linux-gnu-g++
+ 1350  which gcc
+ 1351  $CC --version
+ 1352  $CXX --version
+ 1353  export PATH=$CONDA_PREFIX/bin:$PATH
+ 1354  $CXX --version
+ 1355  cd ~/Desktop/gaussian-splatting/submodules/diff-gaussian-rasterization
+ 1356  rm -rf build
+ 1357  python -m pip install --no-cache-dir .
+ 1358  cd ../..
+ 1359  pip install ./submodules/simple-knn/
+ 1360  pip install --no-cache-dir ./submodules/fused-ssim
+ 1361  conda env export > gaussian_splatting_working.yml
+ 1362  pip install opencv-python joblib tqdm
+ 1363  python run_splatting.py --help
+ 1364  python train.py --eval --white_background --resolution 2 --expname lego -s ./data/nerf_synthetic/lego
+ 1365  python train.py --eval --white_background --resolution 2     --source_path ./data/nerf_synthetic/lego     --model_path ./output/lego
+ 1366  python train.py --eval --white_background --resolution 2     --source_path ./data/nerf_synthetic/mic     --model_path ./output/mic
+ 1367  history > steps_act.txt
